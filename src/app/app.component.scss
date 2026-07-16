@@ -1,0 +1,42 @@
+.shell {
+  background: var(--bg);
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+
+  &--top {
+    top: -180px;
+    left: -120px;
+    width: 520px;
+    height: 520px;
+    background: radial-gradient(circle, rgba(56, 224, 211, .16), transparent 65%);
+    filter: blur(60px);
+    animation: glowfloat 14s ease-in-out infinite;
+  }
+
+  &--mid {
+    top: 480px;
+    right: -180px;
+    width: 560px;
+    height: 560px;
+    background: radial-gradient(circle, rgba(74, 222, 128, .10), transparent 65%);
+    filter: blur(70px);
+    animation: glowfloat2 18s ease-in-out infinite;
+  }
+
+  &--bottom {
+    bottom: 120px;
+    left: -160px;
+    width: 480px;
+    height: 480px;
+    background: radial-gradient(circle, rgba(56, 224, 211, .10), transparent 65%);
+    filter: blur(70px);
+    animation: glowfloat 16s ease-in-out infinite;
+  }
+}

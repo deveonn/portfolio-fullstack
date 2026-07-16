@@ -1,0 +1,132 @@
+/* Global styles + design tokens */
+
+:root {
+  --accent: #38e0d3;
+  --accent-on: #06110f;
+
+  --bg: #0a0e13;
+  --text: #dbe4ec;
+  --text-title: #f2f7fa;
+  --text-secondary: #9db0bf;
+  --text-tertiary: #7d93a5;
+  --text-muted: #55707f;
+  --text-card-body: #b9c8d4;
+
+  --border-neutral: rgba(120, 150, 170, .25);
+  --border-neon-soft: rgba(56, 224, 211, .18);
+  --border-neon: rgba(56, 224, 211, .35);
+
+  --font-body: 'Manrope', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(56, 224, 211, .25);
+}
+
+p {
+  text-wrap: pretty;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .45; }
+}
+
+@keyframes glowfloat {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(40px, -30px); }
+}
+
+@keyframes glowfloat2 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-50px, 40px); }
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  box-sizing: border-box;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: box-shadow .25s, filter .25s, color .25s, border-color .25s;
+
+  &--primary {
+    background: var(--accent);
+    color: var(--accent-on);
+    box-shadow: 0 0 24px rgba(56, 224, 211, .45);
+
+    &:hover {
+      filter: brightness(1.15);
+      color: var(--accent-on);
+      box-shadow: 0 0 40px rgba(56, 224, 211, .7);
+    }
+  }
+
+  &--ghost {
+    border: 1px solid rgba(56, 224, 211, .35);
+    color: var(--text);
+    background: rgba(56, 224, 211, .05);
+    backdrop-filter: blur(8px);
+
+    &:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      box-shadow: 0 0 24px rgba(56, 224, 211, .3);
+    }
+  }
+
+  &--outline {
+    border: 1px solid var(--border-neutral);
+    color: var(--text);
+    background: transparent;
+
+    &:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}

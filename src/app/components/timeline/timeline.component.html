@@ -1,0 +1,25 @@
+<section id="trajetoria" class="container timeline">
+  <p class="timeline__label">02 · trajetória</p>
+  <h3 class="timeline__title">Evolução de carreira</h3>
+  <p class="timeline__subtitle">
+    De aprendiz a desenvolvedor autônomo com contratos formais — cada etapa ampliou escopo e
+    responsabilidade.
+  </p>
+
+  <div class="timeline__rail">
+    @for (job of jobs; track job.company) {
+      <div appReveal class="timeline__item">
+        <span class="timeline__dot"></span>
+        <p class="timeline__period">{{ job.period }}</p>
+        <h4 class="timeline__company">{{ job.company }}</h4>
+        <p class="timeline__role">{{ job.role }}</p>
+        <p class="timeline__description">{{ job.description }}</p>
+        <div class="timeline__tags">
+          @for (tag of job.tags; track tag) {
+            <span class="timeline__tag">{{ tag }}</span>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</section>

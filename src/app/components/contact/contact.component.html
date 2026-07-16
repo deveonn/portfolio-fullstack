@@ -1,0 +1,24 @@
+<section id="contato" class="container contact">
+  <div appReveal class="contact__card">
+    <p class="contact__label">05 · contato</p>
+    <h3 class="contact__title">Vamos conversar?</h3>
+    <p class="contact__text">
+      Aberto a oportunidades CLT e PJ. Respondo rápido — me chame por qualquer canal abaixo.
+    </p>
+    <div class="contact__actions">
+      <a [href]="'mailto:' + profile.email" class="btn btn--primary">✉ Email</a>
+      <a [href]="profile.linkedin" target="_blank" rel="noopener" class="btn btn--outline">in LinkedIn</a>
+      <a [href]="profile.github" target="_blank" rel="noopener" class="btn btn--outline">&lt;/&gt; GitHub</a>
+    </div>
+  </div>
+
+  <p class="contact__footer">construído com café e commits · 2026</p>
+
+  <div class="contact__easter-egg">
+    <img
+      src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnRteGtxZWh5MmdkNnh1eDUzM2c3YTIzM2t0azl6OWZibWZjaXYyMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/P8ef3Dkynk0xLx1h1T/giphy.gif"
+      alt="easter egg"
+    />
+    <p class="contact__easter-caption">// você chegou até aqui 👀</p>
+  </div>
+</section>

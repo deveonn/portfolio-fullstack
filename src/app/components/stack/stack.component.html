@@ -1,0 +1,21 @@
+<section id="stack" class="container stack">
+  <p class="stack__label">03 · stack</p>
+  <h3 class="stack__title">Stack técnica</h3>
+  <p class="stack__note">
+    Tecnologias com as quais já atuei profissionalmente, com perfil generalista — acelerando
+    entregas e explorando novas stacks com apoio de <span class="stack__note-mono">Claude Code</span>.
+  </p>
+
+  <div class="stack__grid">
+    @for (group of groups; track group.name) {
+      <div appReveal class="stack__card">
+        <p class="stack__group-name">{{ group.name }}</p>
+        <div class="stack__badges">
+          @for (tech of group.items; track tech) {
+            <span class="stack__badge">{{ tech }}</span>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</section>

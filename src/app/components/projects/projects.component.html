@@ -1,0 +1,27 @@
+<section id="projetos" class="container projects">
+  <p class="projects__label">04 · projetos</p>
+  <h3 class="projects__title">Projetos em destaque</h3>
+
+  <div class="projects__grid">
+    @for (proj of projects; track proj.title + $index) {
+      @if (proj.tags.length > 0) {
+        <div appReveal class="projects__card projects__card--full">
+          <span class="projects__icon">{{ proj.icon }}</span>
+          <h4 class="projects__card-title">{{ proj.title }}</h4>
+          <p class="projects__card-description">{{ proj.description }}</p>
+          <div class="projects__tags">
+            @for (tag of proj.tags; track tag) {
+              <span class="projects__tag">{{ tag }}</span>
+            }
+          </div>
+        </div>
+      } @else {
+        <div appReveal class="projects__card projects__card--placeholder">
+          <span class="projects__icon">{{ proj.icon }}</span>
+          <h4 class="projects__card-title">{{ proj.title }}</h4>
+          <p class="projects__card-description">{{ proj.description }}</p>
+        </div>
+      }
+    }
+  </div>
+</section>
