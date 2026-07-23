@@ -2,11 +2,12 @@
   <p class="timeline__label">02 · trajetória</p>
   <h3 class="timeline__title">Evolução de carreira</h3>
   <p class="timeline__subtitle">
-    De aprendiz a desenvolvedor autônomo com contratos formais — cada etapa ampliou escopo e
-    responsabilidade.
+    De aprendiz a desenvolvedor autônomo com contratos formais — cada etapa
+    ampliou escopo e responsabilidade.
   </p>
 
   <div class="timeline__rail">
+    <br />
     @for (job of jobs; track job.company) {
       <div appReveal class="timeline__item">
         <span class="timeline__dot"></span>
@@ -21,5 +22,6 @@
         </div>
       </div>
     }
+    <br />
   </div>
 </section>

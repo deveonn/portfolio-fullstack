@@ -37,19 +37,37 @@ export const PROFILE: Profile = {
 export const TIMELINE: Job[] = [
   {
     period: '2022 — 2023',
-    company: 'PurpleCats',
+    company: 'PurpleCats Payments',
     role: 'Aprendiz → Desenvolvedor Júnior',
     description:
-      'Ponto de partida da carreira: entrei como aprendiz e fui promovido a desenvolvedor júnior. Evoluí de tarefas guiadas para entregas próprias em aplicações web e mobile, consolidando fundamentos de desenvolvimento e trabalho em equipe.',
-    tags: ['Primeiro emprego', 'Promoção', 'Web', 'Mobile'],
+      'Ingressei como aprendiz e fui promovido a desenvolvedor júnior em 3 meses. Desenvolvi landing pages, extensões de navegador, backoffice e DApps com React, TypeScript, SCSS e Vite, em time ágil sob Scrum.',
+    tags: ['Primeiro emprego', 'Web developer', 'ReactJS', 'Web3'],
+  },
+  {
+    period: '2023',
+    company: 'ZTech',
+    role: 'Desenvolvedor',
+    description:
+      'Empresa de sistemas ERP e automação comercial com emissão fiscal. Atuei na modernização do ERP legado em Delphi, migrando a base de dados de Paradox para PostgreSQL e realizando os ajustes necessários em código.',
+    tags: ['ERP', 'Delphi', 'PostgreSQL', 'Migração de dados'],
   },
   {
     period: '2024 — 2026',
-    company: 'Hapolo',
+    company: 'Hapolo Sistemas',
     role: 'Desenvolvedor Full-Stack',
     description:
-      'Desenvolvimento de plataforma PWA white-label e projetos de migração tecnológica — modernizando stacks legadas e estruturando configuração escalável para múltiplos clientes.',
-    tags: ['PWA', 'White-label', 'Migração', 'Angular'],
+      'Plataforma SaaS white-label de rastreamento veicular, telemetria e cobrança que atendeu mais de 200 mil clientes. Desenvolvi e mantive as quatro aplicações do ecossistema — rastreamento, motorista, instalador e cotação — em Angular, Ionic, TypeScript e Capacitor (Android, iOS, Web e PWA), sobre uma arquitetura multi-tenant com base Python única. Criei o BK Auth, app de autenticação com geração offline de códigos de validação para o sistema de cobrança, e liderei a migração completa do app de cotação (React Native → Ionic no front, Node.js/Express/Knex → Python/FastAPI no back). Implementei rastreamento em tempo real, telemetria, horímetro e cálculo de consumo de combustível com Google Maps, OpenStreetMap e Leaflet, além de administrar 38 configurações Nginx em produção e implantar monitoramento de erros com GlitchTip self-hosted.',
+    tags: [
+      'PWA',
+      'White-label',
+      'Migrações',
+      'Angular',
+      'Backend',
+      'Micro serviços',
+      'Multi-tenant',
+      'FastAPI',
+      'Mobile',
+    ],
   },
   {
     period: '2026 — atual',
@@ -62,14 +80,52 @@ export const TIMELINE: Job[] = [
 ];
 
 export const STACKS: StackGroup[] = [
-  { name: 'Frontend', items: ['Angular', 'React', 'Next.js', 'TypeScript', 'Ionic', 'PWA'] },
-  { name: 'Backend', items: ['NestJS', 'Node.js', 'Python', 'Django', 'FastAPI'] },
-  { name: 'Dados', items: ['PostgreSQL', 'SQLAlchemy'] },
-  { name: 'Infra', items: ['Nginx', 'WSL / Linux'] },
+  {
+    name: 'Frontend',
+    items: [
+      'Angular',
+      'ReactJS',
+      'Next.js',
+      'TypeScript',
+      'JavaScript',
+      'Ionic',
+      'PWA',
+      'HTML5',
+      'CSS3',
+      'SCSS',
+    ],
+  },
+  {
+    name: 'Backend',
+    items: ['NestJS', 'Node.js', 'Python', 'Django', 'FastAPI', 'Express', 'APIs REST'],
+  },
+  { name: 'Dados', items: ['MySQL', 'PostgreSQL', 'SQL', 'SQLAlchemy'] },
+  { name: 'Mobile', items: ['Android', 'iOS', 'Capacitor', 'PWA', 'React Native'] },
+  {
+    name: 'Geolocalização',
+    items: ['Google Maps', 'OpenStreetMap', 'Leaflet', 'Telemetria', 'Rastreamento em tempo real'],
+  },
+  { name: 'Infra', items: ['Docker', 'Nginx', 'Linux', 'WSL / Ubuntu', 'Git', 'Certbot'] },
 ];
 
 export const PROJECTS: Project[] = [
-  { icon: '⌛', title: 'Em breve', description: 'Projeto em desenvolvimento — aguarde novidades.', tags: [] },
-  { icon: '⌛', title: 'Em breve', description: 'Projeto em desenvolvimento — aguarde novidades.', tags: [] },
-  { icon: '⌛', title: 'Em breve', description: 'Projeto em desenvolvimento — aguarde novidades.', tags: [] },
+  {
+    icon: '🚛',
+    title: 'Vetor',
+    description:
+      'SaaS de gestão de frota (painel web + aplicativo mobile) em Angular, NestJS e Ionic, com integração a plataforma de rastreamento via API REST. Optei por PostgreSQL após avaliar o comportamento do MySQL em altos volumes de dados, priorizando escalabilidade a longo prazo. Responsável por todo o ciclo: levantamento de requisitos, proposta comercial, arquitetura, identidade visual e desenvolvimento.',
+    tags: ['SaaS', 'Angular', 'NestJS', 'Ionic', 'PostgreSQL', 'Projeto próprio'],
+  },
+  {
+    icon: '⌛',
+    title: 'Em breve',
+    description: 'Projeto em desenvolvimento — aguarde novidades.',
+    tags: [],
+  },
+  {
+    icon: '⌛',
+    title: 'Em breve',
+    description: 'Projeto em desenvolvimento — aguarde novidades.',
+    tags: [],
+  },
 ];
