@@ -24,11 +24,6 @@
     max-width: 620px;
   }
 
-  &__note-mono {
-    font-family: var(--font-mono);
-    color: var(--accent);
-  }
-
   &__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -73,10 +68,5 @@
     border-radius: 6px;
     padding: 5px 10px;
     box-shadow: 0 0 10px rgba(56, 224, 211, .15);
-  }
-
-  &__badge--powered {
-    display: inline-block;
-    margin: 0 0 20px;
   }
 }

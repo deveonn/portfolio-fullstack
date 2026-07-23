@@ -63,19 +63,11 @@ export const TIMELINE: Job[] = [
       'Migrações',
       'Angular',
       'Backend',
-      'Micro serviços',
+      'Arquitetura multi-tenant',
       'Multi-tenant',
       'FastAPI',
       'Mobile',
     ],
-  },
-  {
-    period: '2026 — atual',
-    company: 'Freelance / Autônomo',
-    role: 'Desenvolvedor de Software Sob Medida',
-    description:
-      'Desenvolvimento de software sob medida com contratos formais e entrega em fases: levantamento de requisitos, propostas, marcos de entrega e suporte pós-implantação.',
-    tags: ['Contratos formais', 'Entrega em fases', 'Full-stack'],
   },
 ];
 
@@ -106,6 +98,7 @@ export const STACKS: StackGroup[] = [
     items: ['Google Maps', 'OpenStreetMap', 'Leaflet', 'Telemetria', 'Rastreamento em tempo real'],
   },
   { name: 'Infra', items: ['Docker', 'Nginx', 'Linux', 'WSL / Ubuntu', 'Git', 'Certbot'] },
+  { name: 'Ferramentas', items: ['Claude Code', 'VS Code'] },
 ];
 
 export const PROJECTS: Project[] = [
@@ -115,17 +108,5 @@ export const PROJECTS: Project[] = [
     description:
       'SaaS de gestão de frota (painel web + aplicativo mobile) em Angular, NestJS e Ionic, com integração a plataforma de rastreamento via API REST. Optei por PostgreSQL após avaliar o comportamento do MySQL em altos volumes de dados, priorizando escalabilidade a longo prazo. Responsável por todo o ciclo: levantamento de requisitos, proposta comercial, arquitetura, identidade visual e desenvolvimento.',
     tags: ['SaaS', 'Angular', 'NestJS', 'Ionic', 'PostgreSQL', 'Projeto próprio'],
-  },
-  {
-    icon: '⌛',
-    title: 'Em breve',
-    description: 'Projeto em desenvolvimento — aguarde novidades.',
-    tags: [],
-  },
-  {
-    icon: '⌛',
-    title: 'Em breve',
-    description: 'Projeto em desenvolvimento — aguarde novidades.',
-    tags: [],
   },
 ];

@@ -30,19 +30,11 @@ export const TIMELINE_EN: Job[] = [
       'Migrations',
       'Angular',
       'Backend',
-      'Microservices',
+      'Multi-tenant architecture',
       'Multi-tenant',
       'FastAPI',
       'Mobile',
     ],
-  },
-  {
-    period: '2026 — atual',
-    company: 'Freelance / Self-employed',
-    role: 'Custom Software Developer',
-    description:
-      'Custom software development with formal contracts and phased delivery: requirements gathering, proposals, delivery milestones, and post-launch support.',
-    tags: ['Formal contracts', 'Phased delivery', 'Full-stack'],
   },
 ];
 
@@ -73,6 +65,7 @@ export const STACKS_EN: StackGroup[] = [
     items: ['Google Maps', 'OpenStreetMap', 'Leaflet', 'Telemetry', 'Real-time tracking'],
   },
   { name: 'Infra', items: ['Docker', 'Nginx', 'Linux', 'WSL / Ubuntu', 'Git', 'Certbot'] },
+  { name: 'Tools', items: ['Claude Code', 'VS Code'] },
 ];
 
 export const PROJECTS_EN: Project[] = [
@@ -82,18 +75,6 @@ export const PROJECTS_EN: Project[] = [
     description:
       'Fleet management SaaS (web dashboard + mobile app) built with Angular, NestJS, and Ionic, integrated with a tracking platform via REST API. I chose PostgreSQL after evaluating MySQL\'s behavior under high data volumes, prioritizing long-term scalability. Responsible for the entire cycle: requirements gathering, commercial proposal, architecture, visual identity, and development.',
     tags: ['SaaS', 'Angular', 'NestJS', 'Ionic', 'PostgreSQL', 'Personal project'],
-  },
-  {
-    icon: '⌛',
-    title: 'Coming soon',
-    description: 'Project in progress — stay tuned.',
-    tags: [],
-  },
-  {
-    icon: '⌛',
-    title: 'Coming soon',
-    description: 'Project in progress — stay tuned.',
-    tags: [],
   },
 ];
 
@@ -112,9 +93,16 @@ export function getProjects(lang: Lang): Project[] {
 interface UiText {
   nav: { experience: string; projects: string; contact: string; langToggle: string };
   hero: { kicker: string; role: string; lead: string; ctaPrimary: string; ctaSecondary: string };
-  about: { label: string; text: string };
+  about: {
+    label: string;
+    text: string;
+    educationLabel: string;
+    educationValue: string;
+    languagesLabel: string;
+    languagesValue: string;
+  };
   timeline: { label: string; title: string; subtitle: string };
-  stack: { label: string; title: string; badge: string; note: string };
+  stack: { label: string; title: string; note: string };
   projects: { label: string; title: string };
   contact: {
     label: string;
@@ -141,6 +129,10 @@ export const UI: Record<Lang, UiText> = {
     about: {
       label: '01 · sobre',
       text: 'Desenvolvedor full-stack com <strong>mais de 4 anos de experiência</strong>, especializado em plataformas <strong>SaaS multi-tenant de rastreamento veicular</strong>. Atuei em um produto que atendeu <strong>mais de 200 mil clientes</strong>, cobrindo backend Python, frontend Angular, aplicativos Android/iOS e infraestrutura Linux. Experiência com <strong>geolocalização em tempo real, telemetria</strong>, migração de stack tecnológica e modernização de sistemas legados. Baseado em São Marcos/RS, disponível para trabalho remoto.',
+      educationLabel: 'Formação',
+      educationValue: 'Bacharelado em Ciência da Computação · 2022–2024 (incompleto)',
+      languagesLabel: 'Idiomas',
+      languagesValue: 'Português (nativo) · Inglês (intermediário)',
     },
     timeline: {
       label: '02 · trajetória',
@@ -151,8 +143,7 @@ export const UI: Record<Lang, UiText> = {
     stack: {
       label: '03 · stack',
       title: 'Stack técnica',
-      badge: '⚡ Powered by Claude Code',
-      note: 'Tecnologias com as quais já atuei profissionalmente, com perfil generalista — acelerando entregas e explorando novas stacks com apoio de <span class="stack__note-mono">Claude Code</span>.',
+      note: 'Tecnologias com as quais já atuei profissionalmente, com perfil generalista — do banco de dados à interface, passando por mobile e infraestrutura.',
     },
     projects: { label: '04 · projetos', title: 'Projetos em destaque' },
     contact: {
@@ -178,6 +169,10 @@ export const UI: Record<Lang, UiText> = {
     about: {
       label: '01 · about',
       text: 'Full-stack developer with <strong>over 4 years of experience</strong>, specialized in <strong>multi-tenant SaaS platforms for vehicle tracking</strong>. I worked on a product that served <strong>more than 200,000 customers</strong>, covering Python backend, Angular frontend, Android/iOS apps, and Linux infrastructure. Experienced in <strong>real-time geolocation, telemetry</strong>, technology stack migration, and legacy system modernization. Based in São Marcos, Brazil, available for remote work.',
+      educationLabel: 'Education',
+      educationValue: "Bachelor's in Computer Science · 2022–2024 (incomplete)",
+      languagesLabel: 'Languages',
+      languagesValue: 'Portuguese (native) · English (intermediate)',
     },
     timeline: {
       label: '02 · experience',
@@ -188,8 +183,7 @@ export const UI: Record<Lang, UiText> = {
     stack: {
       label: '03 · stack',
       title: 'Tech stack',
-      badge: '⚡ Powered by Claude Code',
-      note: 'Technologies I\'ve worked with professionally, with a generalist profile — speeding up delivery and exploring new stacks with the help of <span class="stack__note-mono">Claude Code</span>.',
+      note: "Technologies I've worked with professionally, with a generalist profile — from database to interface, across mobile and infrastructure.",
     },
     projects: { label: '04 · projects', title: 'Featured projects' },
     contact: {

@@ -20,6 +20,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 18px;
+    max-width: 560px;
   }
 
   &__card {
@@ -29,15 +30,6 @@
     border-radius: 14px;
     padding: 26px;
     backdrop-filter: blur(12px);
-  }
-
-  &__card--placeholder {
-    border: 1px dashed rgba(56, 224, 211, .25);
-    background: rgba(255, 255, 255, .015);
-    min-height: 140px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
 
   &__card--full {

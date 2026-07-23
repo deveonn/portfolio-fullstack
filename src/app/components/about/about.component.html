@@ -3,6 +3,17 @@
     <div class="about__content">
       <p class="about__label">{{ ui[lang()].about.label }}</p>
       <p class="about__text" [innerHTML]="ui[lang()].about.text"></p>
+
+      <div class="about__meta">
+        <div class="about__meta-item">
+          <p class="about__meta-label">{{ ui[lang()].about.educationLabel }}</p>
+          <p class="about__meta-value">{{ ui[lang()].about.educationValue }}</p>
+        </div>
+        <div class="about__meta-item">
+          <p class="about__meta-label">{{ ui[lang()].about.languagesLabel }}</p>
+          <p class="about__meta-value">{{ ui[lang()].about.languagesValue }}</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>

@@ -37,4 +37,30 @@
       color: var(--text-title);
     }
   }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-neutral);
+  }
+
+  &__meta-item {
+    min-width: 200px;
+  }
+
+  &__meta-label {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--accent);
+    margin: 0 0 6px;
+  }
+
+  &__meta-value {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin: 0;
+  }
 }
