@@ -23,7 +23,7 @@ export const TIMELINE_EN: Job[] = [
     company: 'Hapolo Sistemas',
     role: 'Full-Stack Developer',
     description:
-      'White-label SaaS platform for vehicle tracking, telemetry, and billing that served more than 200,000 customers. I developed and maintained the four applications in the ecosystem — tracking, driver, installer, and quoting — using Angular, Ionic, TypeScript, and Capacitor (Android, iOS, Web, and PWA), on top of a multi-tenant architecture with a single Python codebase. I built BK Auth, an authentication app that generates offline validation codes for the billing system, and led the complete migration of the quoting app (React Native → Ionic on the frontend, Node.js/Express/Knex → Python/FastAPI on the backend). I implemented real-time tracking, telemetry, engine-hour tracking, and fuel consumption calculations with Google Maps, OpenStreetMap, and Leaflet, in addition to managing 38 production Nginx configurations and deploying self-hosted GlitchTip for error monitoring.',
+      'White-label B2B SaaS platform for vehicle tracking, telemetry, and billing, serving companies whose combined end customers reached more than 200,000 tracked vehicles at peak. I developed and maintained the four applications in the ecosystem — tracking, driver, installer, and quoting — using Angular, Ionic, TypeScript, and Capacitor (Android, iOS, Web, and PWA), on top of a multi-tenant architecture with a single Python codebase. I built BK Auth, an authentication app that generates offline validation codes for the billing system, and led the complete migration of the quoting app (React Native → Ionic on the frontend, Node.js/Express/Knex → Python/FastAPI on the backend). I implemented real-time tracking, telemetry, engine-hour tracking, and fuel consumption calculations with Google Maps, OpenStreetMap, and Leaflet, in addition to managing 38 production Nginx configurations and deploying self-hosted GlitchTip for error monitoring.',
     tags: [
       'PWA',
       'White-label',
@@ -128,7 +128,7 @@ export const UI: Record<Lang, UiText> = {
     },
     about: {
       label: '01 · sobre',
-      text: 'Desenvolvedor full-stack com <strong>mais de 4 anos de experiência</strong>, especializado em plataformas <strong>SaaS multi-tenant de rastreamento veicular</strong>. Atuei em um produto que atendeu <strong>mais de 200 mil clientes</strong>, cobrindo backend Python, frontend Angular, aplicativos Android/iOS e infraestrutura Linux. Experiência com <strong>geolocalização em tempo real, telemetria</strong>, migração de stack tecnológica e modernização de sistemas legados. Moro em São Marcos/RS, disponível para trabalho remoto.',
+      text: 'Desenvolvedor full-stack com <strong>mais de 4 anos de experiência</strong>, especializado em plataformas <strong>SaaS multi-tenant de rastreamento veicular</strong>. Atuei em um produto B2B, atendendo empresas cujos clientes finais somavam <strong>mais de 200 mil veículos rastreados</strong> no auge, cobrindo backend Python, frontend Angular, aplicativos Android/iOS e infraestrutura Linux. Experiência com <strong>geolocalização em tempo real, telemetria</strong>, migração de stack tecnológica e modernização de sistemas legados. Moro em São Marcos/RS, disponível para trabalho remoto.',
       educationLabel: 'Formação',
       educationValue: 'Bacharelado em Ciência da Computação · 2022–2024 (incompleto)',
       languagesLabel: 'Idiomas',
@@ -168,7 +168,7 @@ export const UI: Record<Lang, UiText> = {
     },
     about: {
       label: '01 · about',
-      text: 'Full-stack developer with <strong>over 4 years of experience</strong>, specialized in <strong>multi-tenant SaaS platforms for vehicle tracking</strong>. I worked on a product that served <strong>more than 200,000 customers</strong>, covering Python backend, Angular frontend, Android/iOS apps, and Linux infrastructure. Experienced in <strong>real-time geolocation, telemetry</strong>, technology stack migration, and legacy system modernization. I live in São Marcos, Brazil, and I\'m available for remote work.',
+      text: 'Full-stack developer with <strong>over 4 years of experience</strong>, specialized in <strong>multi-tenant SaaS platforms for vehicle tracking</strong>. I worked on a B2B product serving companies whose combined end customers reached <strong>more than 200,000 tracked vehicles</strong> at peak, covering Python backend, Angular frontend, Android/iOS apps, and Linux infrastructure. Experienced in <strong>real-time geolocation, telemetry</strong>, technology stack migration, and legacy system modernization. I live in São Marcos, Brazil, and I\'m available for remote work.',
       educationLabel: 'Education',
       educationValue: "Bachelor's in Computer Science · 2022–2024 (incomplete)",
       languagesLabel: 'Languages',
