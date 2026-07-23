@@ -35,4 +35,22 @@
       }
     }
   }
+
+  &__lang-toggle {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    background: rgba(56, 224, 211, .1);
+    border: 1px solid rgba(56, 224, 211, .35);
+    border-radius: 6px;
+    padding: 4px 9px;
+    cursor: pointer;
+    transition: box-shadow .2s, border-color .2s;
+
+    &:hover {
+      border-color: rgba(56, 224, 211, .6);
+      box-shadow: 0 0 10px rgba(56, 224, 211, .25);
+    }
+  }
 }

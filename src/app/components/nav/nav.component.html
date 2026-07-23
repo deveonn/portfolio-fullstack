@@ -1,8 +1,11 @@
 <nav class="nav">
   <span class="nav__logo">~/dev-fullstack</span>
   <div class="nav__links">
-    <a href="#trajetoria">Trajetória</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#contato">Contato</a>
+    <a href="#trajetoria">{{ ui[lang()].nav.experience }}</a>
+    <a href="#projetos">{{ ui[lang()].nav.projects }}</a>
+    <a href="#contato">{{ ui[lang()].nav.contact }}</a>
+    <button type="button" class="nav__lang-toggle" (click)="toggleLang()">
+      {{ ui[lang()].nav.langToggle }}
+    </button>
   </div>
 </nav>

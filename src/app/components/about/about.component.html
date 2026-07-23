@@ -1,15 +1,8 @@
 <section id="sobre" class="container about">
   <div appReveal class="about__card">
     <div class="about__content">
-      <p class="about__label">01 · sobre</p>
-      <p class="about__text">
-        Desenvolvedor full-stack com <strong>mais de 4 anos de experiência</strong>, especializado
-        em plataformas <strong>SaaS multi-tenant de rastreamento veicular</strong>. Atuei em um
-        produto que atendeu <strong>mais de 200 mil clientes</strong>, cobrindo backend Python,
-        frontend Angular, aplicativos Android/iOS e infraestrutura Linux. Experiência com
-        <strong>geolocalização em tempo real, telemetria</strong>, migração de stack tecnológica e
-        modernização de sistemas legados. Baseado em São Marcos/RS, disponível para trabalho remoto.
-      </p>
+      <p class="about__label">{{ ui[lang()].about.label }}</p>
+      <p class="about__text" [innerHTML]="ui[lang()].about.text"></p>
     </div>
   </div>
 </section>

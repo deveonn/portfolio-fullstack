@@ -1,6 +1,6 @@
 <section id="projetos" class="container projects">
-  <p class="projects__label">04 · projetos</p>
-  <h3 class="projects__title">Projetos em destaque</h3>
+  <p class="projects__label">{{ ui[lang()].projects.label }}</p>
+  <h3 class="projects__title">{{ ui[lang()].projects.title }}</h3>
 
   <div class="projects__grid">
     @for (proj of projects; track proj.title + $index) {

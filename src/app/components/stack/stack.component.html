@@ -1,11 +1,8 @@
 <section id="stack" class="container stack">
-  <p class="stack__label">03 · stack</p>
-  <h3 class="stack__title">Stack técnica</h3>
-  <span class="stack__badge stack__badge--powered">⚡ Powered by Claude Code</span>
-  <p class="stack__note">
-    Tecnologias com as quais já atuei profissionalmente, com perfil generalista — acelerando
-    entregas e explorando novas stacks com apoio de <span class="stack__note-mono">Claude Code</span>.
-  </p>
+  <p class="stack__label">{{ ui[lang()].stack.label }}</p>
+  <h3 class="stack__title">{{ ui[lang()].stack.title }}</h3>
+  <span class="stack__badge stack__badge--powered">{{ ui[lang()].stack.badge }}</span>
+  <p class="stack__note" [innerHTML]="ui[lang()].stack.note"></p>
 
   <div class="stack__grid">
     @for (group of groups; track group.name) {
