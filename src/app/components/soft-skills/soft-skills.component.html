@@ -1,0 +1,15 @@
+<section id="soft-skills" class="container soft-skills">
+  <p class="soft-skills__label">{{ ui[lang()].softSkills.label }}</p>
+  <h3 class="soft-skills__title">{{ ui[lang()].softSkills.title }}</h3>
+  <p class="soft-skills__note">{{ ui[lang()].softSkills.note }}</p>
+
+  <div class="soft-skills__grid">
+    @for (skill of skills; track skill.title) {
+      <div appReveal class="soft-skills__card">
+        <span class="soft-skills__icon">{{ skill.icon }}</span>
+        <h4 class="soft-skills__card-title">{{ skill.title }}</h4>
+        <p class="soft-skills__card-description">{{ skill.description }}</p>
+      </div>
+    }
+  </div>
+</section>
